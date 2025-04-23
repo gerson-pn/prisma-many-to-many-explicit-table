@@ -1,0 +1,7 @@
+model Banco {
+  id   Int    @id @default(autoincrement())
+  nome String
+  cnpj String @unique
+
+  vinculos Vinculo[]
+}

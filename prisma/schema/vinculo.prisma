@@ -1,0 +1,13 @@
+model Vinculo {
+    dataInclusao DateTime @default(now())
+    situacao     Situacao
+
+    // banco   Banco @relation(fields: [bancoId], references: [id], onDelete: Cascade)
+    banco   Banco @relation(fields: [bancoId], references: [id])
+    bancoId Int
+
+    correntista   Correntista @relation(fields: [correntistaId], references: [id])
+    correntistaId Int
+
+    @@id([bancoId, correntistaId])
+}
