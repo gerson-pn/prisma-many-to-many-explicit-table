@@ -29,7 +29,7 @@ const obterCorrentistaPorId = async (correntistaId: number) => {
         console.log(`--------------------------------------\n`)
     } else {
         console.log(`--------------------------------------`)
-        console.log(`Corresntista não encontrado`)
+        console.log(`Correntista não encontrado`)
         console.log(`--------------------------------------\n`)
     }
 }
